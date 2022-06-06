@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Проверка штрафов в ГИБДД</title>
+  <link rel="stylesheet" href="cascade.css">
+</head>
+<body>
+<header>
+    <nav id="menu"> 
+        <ul>
+            <li><a href="/">Загрузить штрафы</a></li>
+            <li><a href="/about">Проверить штрафы</a></li>
+            <li><a href="/contacts">Удалить штрафы</a></li>
+        </ul>
+    </nav>
+</header>
+  <article class="article article_bluebg article_second">
+    <h1 class="white">ПРОВЕРКА ШТРАФОВ В ГИБДД</h1>
+    <p class="white">Введи данные об автомобиле:</p>
+    <form class="form" name="check">
+		<p class="white">ГОСНОМЕР АВТОМОБИЛЯ</p>
+      <input type="text" class="form_input" placeholder="А000АА62" name="car_number">
+		<p class="white">Свидетельство о регистрации</p>
+      <input type="text" class="form_input" placeholder="99АА999999" name="certificate">
+      <button class="form_button" type="button" onclick="checkFine()">Проверить штрафы</button>
+    </form>
+	<script>
+		function checkFine(){
+			let check_form = document.forms.check;
+			let car_number = check_form.elements.car_number;
+			let certificate = check_form.elements.certificate;
+			alert('ГОСНОМЕР АВТОМОБИЛЯ: ' + car_number.value + '\nСвидетельство о регистрации' + certificate.value)
+			 
+			
+		}
+	</script>
+  </article>
+</body>
+</html>
