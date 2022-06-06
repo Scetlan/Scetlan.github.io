@@ -6,35 +6,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <nav id="menu"> 
+<main>
+    <h1>Никита Михайлов</h1>
+    <h2>Создатель профессии «Верстальщик» на Hexlet</h2>
+
+    <hr>
+
+    <section>
+        <h2>Ключевые навыки:</h2>
         <ul>
-            <li><a href="/">Загрузить штрафы</a></li>
-            <li><a href="/about">Проверить штрафы</a></li>
-            <li><a href="/contacts">Удалить штрафы</a></li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
         </ul>
-    </nav>
-</header>
-  <article class="article article_bluebg article_second">
-    <h1 class="white">ПРОВЕРКА ШТРАФОВ В ГИБДД</h1>
-    <p class="white">Введи данные об автомобиле:</p>
-    <form class="form" name="check">
-		<p class="white">ГОСНОМЕР АВТОМОБИЛЯ</p>
-      <input type="text" class="form_input" placeholder="А000АА62" name="car_number">
-		<p class="white">Свидетельство о регистрации</p>
-      <input type="text" class="form_input" placeholder="99АА999999" name="certificate">
-      <button class="form_button" type="button" onclick="checkFine()">Проверить штрафы</button>
-    </form>
-	<script>
-		function checkFine(){
-			let check_form = document.forms.check;
-			let car_number = check_form.elements.car_number;
-			let certificate = check_form.elements.certificate;
-			alert('ГОСНОМЕР АВТОМОБИЛЯ: ' + car_number.value + '\nСвидетельство о регистрации' + certificate.value)
-			 
-			
-		}
-	</script>
-  </article>
+    </section>
+
+    <section>
+        <h2>О преподавателе</h2>
+        <p>Много лет работал в аутсорсинговой компании. Развивал клиентские проекты, делал фичи для разных CMS. В основном верстал, готов передать весь опыт вам. Поработав с сотнями проектов, научился выкручиваться даже из самых безнадёжных ситуаций. Поможет освоить вёрстку, чтобы она перестала казаться чем-то страшным.</p>
+    </section>
+</main>
 </body>
 </html>
